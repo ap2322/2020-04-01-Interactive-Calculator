@@ -1,0 +1,23 @@
+{
+  "name": "2020-04-01-Interactive-Calculator",
+  "version": "1.0.0",
+  "description": "Calculator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ap2322/2020-04-01-Interactive-Calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ap2322/2020-04-01-Interactive-Calculator/issues"
+  },
+  "homepage": "https://github.com/ap2322/2020-04-01-Interactive-Calculator#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
+}
