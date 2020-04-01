@@ -6,14 +6,20 @@ var calculator = new Vue({
         total: ''
     },
     computed: {
+        numTipTotal: function(e) {
+          var percentage = this.tipRate/100 + 1;
+          var calculatedTotal = percentage * this.price
+          return calculatedTotal
+        },
         calcTotal: function(e){
-            var percentage = this.tipRate/100 + 1;
-            var calculatedTotal = percentage * this.price
-            return currencyFormat(calculatedTotal)
-
+            return currencyFormat(this.numTipTotal)
         },
         numFormat: function(e){
             e.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+        },
+        calcTip: function(e){
+          var calculatedTip = this.numTipTotal - this.price;
+          return currencyFormat(calculatedTip)
         }
     }
 

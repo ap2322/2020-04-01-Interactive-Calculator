@@ -8,7 +8,7 @@
       <div id="calculator">
               <div class="container">
                   <form action="">
-                      <h1>Tip Calculator</h1>
+                      <h1>Whole Dollar Tip Calculator</h1>
                       <p>Caluclate how much you should tip</p>
                       <label for="price">Total Receipt Price</label>
                       <input type="number" name="price" class="currency" v-model.number="price"/>
@@ -23,7 +23,9 @@
                       </select>
 
                   </form>
-                  <div class="total">{{ calcTotal }} </div>
+                  <div class="total">Total Amount {{ calcTotal }} </div>
+                  <br />
+                  <div class="tip" v-if="price">Tip Amount {{ calcTip }} </div>
               </div>
           </div>
 
