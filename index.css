@@ -15,17 +15,7 @@ body {
     justify-content: center;
     padding-top: 16px;
     transition: all 0.3s ease-in;
-
-    @media (max-width: 512px){
-        padding: 32px;
-        transition: all 0.3s ease-in;
-    }
-
-    @media (max-width: 360px){
-        padding: 16px;
-        transition: all 0.3s ease-in;
-    }
-
+    background-color: #A4B7E1;
 }
 
 h1 {
@@ -48,16 +38,6 @@ p {
     box-shadow: 2px 2px 96px #111;
     border-radius: 8px;
     transition: all 0.3s ease-in;
-
-    @media (max-width: 512px){
-        padding: 32px;
-        transition: all 0.3s ease-in;
-    }
-
-    @media (max-width: 360px){
-        padding: 16px;
-        transition: all 0.3s ease-in;
-    }
 
 }
 
@@ -83,8 +63,8 @@ input, select {
 
     &:focus {
         background-color: #fff;
-        color: #3200ff;
-        border-color: #3200ff;
+        color: #1D3B7F;
+        border-color: #1D3B7F;
         outline: 0;
     }
 
@@ -103,20 +83,12 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: bold;
     transition: all 0.3s ease-in;
 
-    @media (max-width: 512px){
-        font-size: 40px;
-        transition: all 0.3s ease-in;
-    }
-
-    @media (max-width: 400px){
-        font-size: 32px;
-        transition: all 0.3s ease-in;
-    }
-
 }
 
-@media (max-height: 750px){
-    body {
-        height: 100%;
-    }
+.tip {
+  color: #000;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
 }
